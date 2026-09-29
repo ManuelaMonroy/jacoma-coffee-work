@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("fondo.jacoma.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* MENÚ */
+
+nav{
+    background-color:#8a5d65;
+    padding:18px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:0 30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+nav ul li a:hover{
+    color:#f7d7d7;
+}
+
+/* BANNER */
+
+.banner{
+    width:100%;
+}
+
+.banner img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+
+/* SECCIÓN INICIO */
+
+#inicio{
+    background-color: #fdf9f7;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.inicio-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.inicio-imagen img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.inicio-texto{
+    flex: 1;
+}
+
+.inicio-texto h2{
+    font-size: 45px;
+    color: #7b4d59;
+    margin-bottom: 25px;
+}
+
+.inicio-texto p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/*SECCION NOSOTROS*/
+
+#nosotros{
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fdf9f7;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.10);
+}
+
+.nosotros-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nosotros-texto{
+    flex: 1;
+}
+
+.nosotros-texto h2{
+    font-size: 45px;
+    color: #7b4d59;
+    margin-bottom: 25px;
+}
+
+.nosotros-texto p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+.nosotros-imagen img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+}
+
+
+/* SECCIÓN SERVICIOS */
+
+#servicios{
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fdf9f7;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.10);
+}
+
+#servicios h2{
+    text-align: center;
+    color: #7b4d59;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.servicios-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h3{
+    color: #7b4d59;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: #555;
+    line-height: 1.6;
+}
+
+footer{
+    background-color: #7b4d59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.icono{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #f5e6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono i{
+    font-size: 35px;
+    color: #7b4d59;
+}
+
+.card{
+    text-align: center;
+}
+
+/* SECCIÓN CONTACTO */
+
+#contacto{
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fdf9f7;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.10);
+}
+
+#contacto h2{
+    text-align: center;
+    color: #7b4d59;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.contacto-introduccion{
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 35px;
+}
+
+.contacto-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contacto-card{
+    background-color: white;
+    width: 30%;
+    min-height: 220px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
+}
+
+.contacto-icono{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #f5e6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-icono i{
+    font-size: 30px;
+    color: #7b4d59;
+}
+
+.contacto-card h3{
+    color: #7b4d59;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contacto-card p{
+    color: #555;
+    line-height: 1.6;
+}
+
+/* PORTADA */
+
+.portada{
+    background-image: url("fondo.jacoma.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-portada{
+    text-align: center;
+    color: white;
+}
+
+.contenido-portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-portada{
+    width: 650px;
+    max-width: 90%;
+    margin-bottom: 30px;
+    
+}
+
+.boton{
+    display: inline-block;
+    padding: 15px 40px;
+
+    background-color: #7b4d59;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover{
+    background-color: #966370;
+    transform: scale(1.05);
+}
+
+.logo-portada{
+    width: 500px;
+    max-width: 90%;
+
+    background-color: #f3ebe5;
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    border: 2px solid #e2d3c7;
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.20);
+
+    margin-bottom: 30px;
+}
+
+footer p{
+    margin: 5px 0;
+}
+
+/* ============================= */
+/* FORMULARIO DE CONTACTO */
+/* ============================= */
+
+.formulario-bloque{
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.10);
+}
+
+
+/* TÍTULO DEL FORMULARIO */
+
+.formulario-bloque h3{
+    text-align: center;
+
+    color: #7b4d59;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO INTRODUCTORIO */
+
+.formulario-introduccion{
+    text-align: center;
+
+    color: #555;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ORGANIZACIÓN DEL FORMULARIO */
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* NOMBRES DE LOS CAMPOS */
+
+.formulario-contacto label{
+    color: #7b4d59;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+
+/* CAMPOS DE TEXTO */
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d8c4c8;
+
+    border-radius: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    background-color: #fdf9f7;
+}
+
+
+/* EFECTO CUANDO SE SELECCIONA UN CAMPO */
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus{
+    outline: none;
+
+    border: 2px solid #7b4d59;
+}
+
+
+/* MENSAJE */
+
+.formulario-contacto textarea{
+    resize: vertical;
+}
+
+
+/* BOTÓN ENVIAR */
+
+.formulario-contacto button{
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #7b4d59;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* EFECTO SOBRE EL BOTÓN */
+
+.formulario-contacto button:hover{
+    background-color: #966370;
+
+    transform: scale(1.02);
+}
+
+
+
+/* ============================= */
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
+/* ============================= */
+
+@media (max-width: 900px){
+
+    nav ul{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav ul li{
+        margin: 5px 10px;
+    }
+
+
+    #inicio,
+    #nosotros,
+    #servicios,
+    #contacto{
+        width: 92%;
+    }
+
+
+    .inicio-contenedor,
+    .nosotros-contenedor{
+        flex-direction: column;
+    }
+
+
+    .inicio-imagen img,
+    .nosotros-imagen img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+
+    .servicios-contenedor{
+        grid-template-columns: 1fr;
+    }
+
+
+    .contacto-contenedor{
+        flex-direction: column;
+    }
+
+
+    .contacto-card{
+        width: 100%;
+    }
+
+
+    .formulario-bloque{
+        padding: 25px 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
